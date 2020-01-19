@@ -6,19 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KPS</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
-    <div id="navigacija">
-        <div id="logo" >
-            <a href="index.html"><img src="img/logo.png" alt="logo"/></a>
-            <a href="index.html"><h1>KPS</h1></a>
-        </div>
-        <nav id="nav">
-            
-        </nav>
-        
+    <div class="container-fluid">
+        <div id="navigacija" class="row">
+            <div id="logo"  class="col-lg-3 col-md-2 col-lg-offset-2">
+                <a href="index.html"><img src="img/logo.png" alt="logo"/></a>
+                <a href="index.html"><h1>KPS</h1></a>
+            </div>
+            <nav id="nav" class="col-lg-7  col-md-10 d-none d-lg-block my-auto">
+                
+            </nav>
+            <div id="hamburger" class="d-lg-none col-2 text-center my-auto">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div id="hamburgerPodMeni" class="d-lg-none col-12  my-auto">
+
+            </div>
+        </div>  
     </div>
     <div id="sredina">
         <!--SLIKA CSS-->
@@ -28,7 +36,7 @@
         
 
     </div>
-    
+
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/main.js" type="text/javascript">
     
