@@ -22,7 +22,8 @@ window.onload=function(){
     document.getElementById("hamburgerPodMeni").innerHTML+=meni;
     //KRAJ MENIJA
     //SLAJDER
-    
+    var slajderPromenljiva=document.getElementById('slajderDiv');
+    var nizSlikaSlajder=['slika1.jpg','slika2.jpg','slika3.jpg'];
     
 
 }

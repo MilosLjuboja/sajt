@@ -1,4 +1,17 @@
-
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding:0px;
@@ -61,7 +74,31 @@ a{
     font-size: 20px;
     line-height: 2;
 }
-
+#pokazivac{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:500px;
+}
+.down{
+    color:#000000;
+    font-size: 50px;
+    animation: animate 1s infinite;
+    animation-delay: 1s;
+}
+#projekti{
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    text-align: center;
+}
+#slajderDiv{
+    width: 800px;
+    height: 400px;
+    background-color: #4c9fff;
+    margin: 20px auto;
+}
 
 
 
