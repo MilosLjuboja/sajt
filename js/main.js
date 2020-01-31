@@ -23,20 +23,28 @@ window.onload=function(){
     //KRAJ MENIJA
     //SLAJDER
     
-    var slikaSlajder=document.getElementById('slikaSlajder');
-    var src=["img/slika2.jpg","img/slika3.jpg"]
-    var index=0;
-
-    function slajder(){
-        slikaSlajder.setAttribute("src",src[index]);
-        index++;
-        if(index>=src.length){index=0}
-    }
-    setInterval("sladjer()",2000);
-    
+    slajder()
 }
+    
+
 $(document).ready(function(){
     $('#hamburger').click(function(){
         $('#hamburgerPodMeni').find('ul').slideToggle('fast');
     });
 })
+var slikaSlajder=document.getElementById('slikaSlajder')
+var slike=["img/slika1.jpg","img/slika2.jpg","img/slika3.jpg"]
+var index=0;
+function slajder(){
+   slikaSlajder.src=slike[index]
+    if(index<slike.length-1){
+        index++ 
+        console.log(index)
+    }
+    else{
+        index=0
+        console.log("proba") 
+    }
+    setTimeout("slajder()",3000)
+}
+

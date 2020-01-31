@@ -17,6 +17,9 @@ html{
     padding:0px;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 .cistac{
     clear:both;
 }
@@ -62,6 +65,7 @@ a{
 }
 #sredina{
     background-image: url('../img/banner3r.jpg');
+    background-position: right;
     background-size: cover;
     width:100%;
     height: 600px;
@@ -69,6 +73,9 @@ a{
 }
 .nevidljiv{
     display: none;
+}
+.vidljiv{
+    display:block;
 }
 #hamburgerPodMeni{
     font-size: 20px;
@@ -92,13 +99,38 @@ a{
     font-family: 'Roboto Slab', serif;
     font-size:20px;
     text-align: center;
+    margin: 20px;
 }
 #slajderDiv{
-    width: 800px;
-    height: 400px;
-    background-color: #4c9fff;
-    margin: 20px auto;
+    width: 100%;
+    
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+.okvirSlike{
+    width:50%;
+
+}
+.okvirSlike img{
+    width: 100%;
 }
 
-
+@media screen and (max-width:900px){
+    .okvirSlike{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    #sredina{
+        height:400px;
+    }
+    #pokazivac{
+        top: 330px;
+        
+    }
+    #pokazivac a i{
+        color: rgb(255, 255, 255);
+    }
+}
 
