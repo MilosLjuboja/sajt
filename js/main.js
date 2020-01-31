@@ -39,11 +39,11 @@ function slajder(){
    slikaSlajder.src=slike[index]
     if(index<slike.length-1){
         index++ 
-        console.log(index)
+        
     }
     else{
         index=0
-        console.log("proba") 
+        
     }
     setTimeout("slajder()",3000)
 }
