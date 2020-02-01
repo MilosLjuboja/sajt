@@ -17,6 +17,7 @@ html{
     padding:0px;
     box-sizing: border-box;
 }
+
 body{
     overflow-x: hidden;
 }
@@ -77,10 +78,18 @@ a{
 .vidljiv{
     display:block;
 }
+#hamburger i{
+    color:#d6a400;
+}
 #hamburgerPodMeni{
     font-size: 20px;
     line-height: 2;
+    
 }
+#hamburgerPodMeni a{
+    color:#d6a400;
+}
+
 #pokazivac{
     width: 100%;
     display: flex;
@@ -99,7 +108,7 @@ a{
     font-family: 'Roboto Slab', serif;
     font-size:20px;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0px;
 }
 #slajderDiv{
     width: 100%;
@@ -131,6 +140,9 @@ a{
     }
     #pokazivac a i{
         color: rgb(255, 255, 255);
+    }
+    #navigacija{
+        background-color:rgba(0, 0, 0, 0.6);
     }
 }
 

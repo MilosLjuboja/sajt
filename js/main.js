@@ -21,17 +21,17 @@ window.onload=function(){
     meni+="</ul>"
     document.getElementById("hamburgerPodMeni").innerHTML+=meni;
     //KRAJ MENIJA
-    //SLAJDER
-    
+    //SLAJDER, POCINJE OD 34 LINIJE A ZAVRSAVA SE U 49
     slajder()
 }
-    
 
 $(document).ready(function(){
     $('#hamburger').click(function(){
-        $('#hamburgerPodMeni').find('ul').slideToggle('fast');
+        $('#hamburgerPodMeni').find('ul').stop(true,true).slideToggle('fast');
+
     });
 })
+//SLAJDER
 var slikaSlajder=document.getElementById('slikaSlajder')
 var slike=["img/slika1.jpg","img/slika2.jpg","img/slika3.jpg"]
 var index=0;
@@ -47,4 +47,5 @@ function slajder(){
     }
     setTimeout("slajder()",3000)
 }
+//SLAJDER
 
