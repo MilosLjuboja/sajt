@@ -132,7 +132,7 @@ a{
     line-height: 1.5;
 }
 #slajderDiv{
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .okvirSlike img{
@@ -158,7 +158,11 @@ a{
     background-attachment: fixed;
 }
 #onama{
-    margin-top: 50px;
+    margin: 100px 0px;
+}
+#mapa iframe{
+    width:100%;
+    height: 400px;
 }
 
 @media screen and (max-width:900px){
