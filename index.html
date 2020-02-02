@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="img/ikonica.ico" />
+    
     <title>KPS</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="shortcut icon" href="img/ikonica.ico"/>
 </head>
 <body>
     <div class="container-fluid">
@@ -86,13 +87,41 @@
         <div id="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.340448317075!2d20.481691315750936!3d44.81462848457049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0x4b2dd3d867d041a!2z0JfQtNGA0LDQstC60LAg0KfQtdC70LDRgNCwIDE2LCDQkdC10L7Qs9GA0LDQtA!5e0!3m2!1ssr!2srs!4v1580677048542!5m2!1ssr!2srs" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="container">
+        <div class="container" id="kontaktInfo">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Kontaktirajte nas</h2>
+                    <h2 class="pb-3">Kontaktirajte nas</h2>
+                    <p class="pb-5">Imate li nekih pitanja?</p>
+                    <div class="row pb-3">
+                        <div class="col-lg-1 kontaktIkone">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Adresa</h3>
+                        </div>
+                    </div>
+                    <p class="pb-4">Zdravka Čelara 16,Beograd</p>
+                    <div class="row pb-3">
+                        <div class="col-lg-1 kontaktIkone">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Telefon</h3>
+                        </div>
+                    </div>
+                    <p class="pb-4">0612345678</p>
+                    <div class="row pb-3">
+                        <div class="col-lg-1 kontaktIkone">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="col-lg-11 kontaktNaslovi">
+                            <h3 >Email</h3>
+                        </div>
+                    </div>
+                    <p class="pb-4">pera@ict.edu.rs</p>
                 </div>
                 <div class="col-lg-6">
-                    <form>
+                    <!-- <form>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Email address</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -107,7 +136,7 @@
                           <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
+                      </form> -->
                 </div>
             </div>
         </div>

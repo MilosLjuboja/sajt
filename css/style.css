@@ -170,6 +170,15 @@ a{
     width:100%;
     height: 350px;
 }
+#kontaktInfo{
+    padding: 50px 0px;
+}
+.kontaktIkone i{
+    font-size: 2.4em;
+}
+.kontaktNaslovi{
+    text-align: left;
+}
 .slikaAutor{
     width: 300px;
 }
