@@ -7,7 +7,7 @@
     <title>KPS</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
@@ -30,7 +30,11 @@
         </div>  
     </div>
     <div id="sredina">
-        <!--SLIKA CSS-->
+        <div class="container">
+            <div id="sredinaNaslov">
+                <h1>Dobrodošli na sajt kompanije KPS</h1>
+            </div>  
+        </div>
         <div id="pokazivac">
             <a href="#projekti">
                 <i class="fas fa-angle-double-down down">
@@ -109,18 +113,22 @@
 
     </div>
     <footer>
-        <div class="container d-flex justify-content-center">
-            <div class="row">
-                <div class="col-lg-12 py-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-5 ">
                     <img src="img/slikaProjekti5.jpg" alt="autor" class="slikaAutor pb-3"/>
-                    <h4 class="d-flex justify-content-center">Milos Ljuboja 279/18</h4>
+                    <h4>Milos Ljuboja 279/18</h4>
+                </div>
+                <div class="col-lg-7" id="tekstAutor">
+                    <h2>O autoru</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
                 </div>
             </div>
-            
-                <div class="copy">
-                    <p>Copyrigth &copy; 2020. All rights reserved</p>
-                </div>
-            
+        </div>
+        <div class="copy d-flex justify-content-center">
+            <p class="py-4">Copyrigth &copy; 2020. All rights reserved</p>
         </div>
     </footer>
 

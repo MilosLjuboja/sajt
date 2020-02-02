@@ -21,8 +21,9 @@ html{
 body{
     overflow-x: hidden;
 }
-h2{
-    font-family: 'Roboto Slab', serif;
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
 }
 p,a,h4{
     font-family: 'Raleway', sans-serif;
@@ -81,6 +82,11 @@ a{
     /* border-bottom: 2px solid #425efd; */
     /* border-bottom:2px solid #4c9fff ; */
 }
+#sredinaNaslov{
+    color: #fff;
+    font-size: 2.4em;
+    padding-top: 150px;
+}
 .nevidljiv{
     display: none;
 }
@@ -104,7 +110,7 @@ a{
     display: flex;
     justify-content: center;
     position: relative;
-    top:600px;
+    top:250px;
 }
 .down{
     color:#fff;
@@ -122,11 +128,11 @@ a{
     text-align: left;
     margin: 20px 0px;
 }
-#projekti h2,#onama h2{
+#projekti h2,#onama h2,#tekstAutor h2{
     font-size: 2.1em;
     margin-bottom: 20px;
 }
-#projekti p,#onama p{
+#projekti p,#onama p,#tekstAutor p{
     font-size: 1.1em;
     margin-bottom: 15px;
     line-height: 1.5;
@@ -168,12 +174,11 @@ a{
     width: 300px;
 }
 footer{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color:#fff;
 }
 .copy{
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width:900px){
     .okvirSlike{
