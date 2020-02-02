@@ -24,7 +24,7 @@ body{
 h2{
     font-family: 'Roboto Slab', serif;
 }
-p,a{
+p,a,h4{
     font-family: 'Raleway', sans-serif;
 }
 .cistac{
@@ -162,9 +162,19 @@ a{
 }
 #mapa iframe{
     width:100%;
-    height: 400px;
+    height: 350px;
 }
-
+.slikaAutor{
+    width: 300px;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:#fff;
+}
+.copy{
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 @media screen and (max-width:900px){
     .okvirSlike{
         width: 90%;
