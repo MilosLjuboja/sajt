@@ -21,20 +21,27 @@ html{
 body{
     overflow-x: hidden;
 }
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+p,a{
+    font-family: 'Raleway', sans-serif;
+}
 .cistac{
     clear:both;
 }
 a{
     text-decoration: none;
-    color:#000000;
+    color: #fff;
 
 }
 #navigacija{
     width:100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 0px 40px;
 }
 #logo{
     margin-top:5px;
@@ -42,11 +49,11 @@ a{
     height: 50px;
     font-family: 'Roboto Slab', serif;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 #logo a img{
-    width:50px;
+    width:45px;
     margin-right: 10px;
 }
 .tekstMeni :hover{
@@ -54,14 +61,14 @@ a{
 }
 #nav ul,#listaHamburger{
     list-style-type: none; 
-    text-align: center;
+    text-align: right;
 }
 #nav ul li{
     margin-left:5%;
     display:inline; 
 }
 #nav ul li a,#hamburgerPodMeni{
-    font-family: 'Roboto Slab', serif;
+    
     font-size:20px;
 }
 #sredina{
@@ -69,8 +76,8 @@ a{
     background-position: right;
     background-size: cover;
     width:100%;
-    height: 600px;
-    border-bottom: 2px solid #425efd;
+    height: 700px;
+    /* border-bottom: 2px solid #425efd; */
     /* border-bottom:2px solid #4c9fff ; */
 }
 .nevidljiv{
@@ -96,34 +103,53 @@ a{
     display: flex;
     justify-content: center;
     position: relative;
-    top:500px;
+    top:600px;
 }
 .down{
-    color:#000000;
-    font-size: 50px;
+    color:#fff;
+    font-size: 30px;
     animation: animate 1s infinite;
     animation-delay: 1s;
+}
+#projektiCelina{
+    margin: 50px 0px;
 }
 #projekti{
     width: 100%;
     font-family: 'Roboto Slab', serif;
-    font-size:20px;
-    text-align: center;
+    
+    text-align: left;
     margin: 20px 0px;
 }
+#projekti h2{
+    font-size: 2.1em;
+    margin-bottom: 20px;
+}
+#projekti p{
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
 #slajderDiv{
-    width: 100%;
-    
-    margin: 30px 0px;
-    display: flex;
-    justify-content: center;
+    padding-top: 80px;
 }
-.okvirSlike{
-    width:50%;
+/* .okvirSlike{
+     width:50%; 
 
-}
+} */
 .okvirSlike img{
     width: 100%;
+}
+
+.projektiDiv{
+    
+    
+    
+}
+.projekti{
+    width: 400px;
+    
+    text-align: center;
 }
 
 @media screen and (max-width:900px){
@@ -135,12 +161,13 @@ a{
     #sredina{
         height:400px;
     }
+    #sredina 
     #pokazivac{
-        top: 330px;
+        top: 320px;
         
     }
     #pokazivac a i{
-        color: rgb(255, 255, 255);
+        color:#d6a400;
     }
     #navigacija{
         background-color:rgba(0, 0, 0, 0.6);
