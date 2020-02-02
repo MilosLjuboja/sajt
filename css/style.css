@@ -65,7 +65,7 @@ a{
     text-align: right;
 }
 #nav ul li{
-    margin-left:5%;
+    margin-left:4%;
     display:inline; 
 }
 #nav ul li a,#hamburgerPodMeni{
@@ -73,7 +73,7 @@ a{
     font-size:20px;
 }
 #sredina{
-    background-image: url('../img/banner3r.jpg');
+    background-image: url('../img/slikaProjekti5.jpg');
     background-position: right;
     background-size: cover;
     width:100%;
@@ -122,11 +122,11 @@ a{
     text-align: left;
     margin: 20px 0px;
 }
-#projekti h2{
+#projekti h2,#onama h2{
     font-size: 2.1em;
     margin-bottom: 20px;
 }
-#projekti p{
+#projekti p,#onama p{
     font-size: 1.1em;
     margin-bottom: 15px;
     line-height: 1.5;
@@ -134,23 +134,31 @@ a{
 #slajderDiv{
     padding-top: 80px;
 }
-/* .okvirSlike{
-     width:50%; 
 
-} */
 .okvirSlike img{
     width: 100%;
 }
 
-.projektiDiv{
-    
-    
-    
+#projektiSlike{
+    margin-top: 30px;
 }
 .projekti{
     width: 400px;
-    
     text-align: center;
+}
+.projekti img{
+    width: 350px;
+    margin: 30px 0px;
+}
+#baner{
+    height: 400px;
+    background-image: url('../img/slikaProjekti5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#onama{
+    margin-top: 50px;
 }
 
 @media screen and (max-width:900px){

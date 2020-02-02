@@ -53,11 +53,11 @@ divProjekti.innerHTML+=tekst
 //SLAJDER KRAJ
 //SLIKE PROJEKATA
 var projektiSlike=document.getElementById("projektiSlike")
-var nizSlika=["img/slikaProjekti1.jpg","img/slikaProjekti1.jpg","img/slikaProjekti1.jpg","img/slikaProjekti1.jpg"]
-var nizNaslova=["Los Angeles","New York","Los Angeles","New York"]
+var nizSlika=["img/slikaProjekti5.jpg","img/slikaProjekti5.jpg","img/slikaProjekti5.jpg"]
+var nizNaslova=["Los Angeles","New York","Los Angeles"]
 var blokovi=""
 for(var i=0;i<=nizSlika.length-1;i++){
-blokovi+=`<div class="projekti col-lg-6"><img src="${nizSlika[i]}" alt="${nizNaslova[i]}" /><h2>${nizNaslova[i]}</h2></div>`
+blokovi+=`<div class="projekti col-lg-4"><img src="${nizSlika[i]}" alt="${nizNaslova[i]}" /><h2>${nizNaslova[i]}</h2></div>`
 }
 projektiSlike.innerHTML=blokovi
 
