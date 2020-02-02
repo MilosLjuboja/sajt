@@ -57,7 +57,7 @@ var nizSlika=["img/slikaProjekti1.jpg","img/slikaProjekti1.jpg","img/slikaProjek
 var nizNaslova=["Los Angeles","New York","Los Angeles","New York"]
 var blokovi=""
 for(var i=0;i<=nizSlika.length-1;i++){
-blokovi+=`<div class="projekti col-lg-6"><h2>${nizNaslova[i]}</h2><img src="${nizSlika[i]}" alt="${nizNaslova[i]}" /></div>`
+blokovi+=`<div class="projekti col-lg-6"><img src="${nizSlika[i]}" alt="${nizNaslova[i]}" /><h2>${nizNaslova[i]}</h2></div>`
 }
 projektiSlike.innerHTML=blokovi
 
