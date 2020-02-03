@@ -17,13 +17,11 @@ html{
     padding:0px;
     box-sizing: border-box;
 }
-
 body{
     overflow-x: hidden;
 }
 h1,h2{
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Roboto Slab', serif; */
 }
 p,a,h4{
     font-family: 'Raleway', sans-serif;
@@ -51,7 +49,6 @@ a{
     height: 50px;
     font-family: 'Roboto Slab', serif;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 #logo a img{
@@ -99,7 +96,9 @@ a{
 #hamburgerPodMeni{
     font-size: 20px;
     line-height: 2;
-    
+}
+#hamburgerPodMeni ul{
+    text-align: center;
 }
 #hamburgerPodMeni a{
     color:#d6a400;
@@ -140,11 +139,9 @@ a{
 #slajderDiv{
     padding-top: 70px;
 }
-
 .okvirSlike img{
-    width: 100%;
+    width: 100%; 
 }
-
 #projektiSlike{
     margin-top: 30px;
 }
@@ -195,12 +192,15 @@ footer{
     }
 }
 @media screen and (max-width:600px){
+    h1{
+        font-size: 1em;
+    }
     #sredina{
         height:400px;
     }
     #sredina 
     #pokazivac{
-        top: 320px;
+        top: 100px;
         
     }
     #pokazivac a i{
