@@ -33,7 +33,7 @@ $(document).ready(function(){
 })
 //SLAJDER
 var slikaSlajder=document.getElementById('slikaSlajder')
-var slike=["img/slika1.jpg","img/slika2.jpg","img/slika3.jpg"]
+var slike=["img/slika4.jpg","img/slika2.jpg","img/slika3.jpg"]
 var index=0;
 function slajder(){
    slikaSlajder.src=slike[index]
@@ -54,7 +54,7 @@ divProjekti.innerHTML+=tekst
 //SLIKE PROJEKATA
 var projektiSlike=document.getElementById("projektiSlike")
 var nizSlika=["img/slikaProjekti4.jpg","img/slikaProjekti2.jpg","img/slikaProjekti6.jpg"]
-var nizNaslova=["Los Angeles","Miami","Los Angeles"]
+var nizNaslova=["Amsterdam","Miami","Melbourne"]
 var blokovi=""
 for(var i=0;i<=nizSlika.length-1;i++){
 blokovi+=`<div class="projekti col-lg-4"><img src="${nizSlika[i]}" alt="${nizNaslova[i]}" /><h2>${nizNaslova[i]}</h2></div>`
