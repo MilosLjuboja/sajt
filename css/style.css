@@ -23,7 +23,7 @@ body{
 h1,h2{
     font-family: 'Poppins', sans-serif;
 }
-p,a,h4,form,input{
+p,a,h4,form,input,#poruka{
     font-family: 'Raleway', sans-serif;
 }
 .cistac{
@@ -133,7 +133,7 @@ a{
     margin-bottom: 15px;
     line-height: 1.5;
 }
-#slajderDiv{
+.slajderDiv{
     padding-top: 70px;
 }
 .okvirSlike img{
@@ -181,6 +181,9 @@ a{
     width: 100%;
     margin-top: 20px;
     font-size: 19px;
+}
+#poruka{
+    resize: none;
 }
 .slikaAutor{
     width: 300px;
