@@ -192,6 +192,14 @@ footer{
 .copy{
     background-color: rgba(0, 0, 0, 0.2);
 }
+#strelicaGore{
+    font-size: 50px;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    color: #d6a400;
+    display:none;
+}
 @media screen and (max-width:900px){
     .okvirSlike{
         width: 90%;

@@ -30,6 +30,19 @@ $(document).ready(function(){
         $('#hamburgerPodMeni').find('ul').stop(true,true).slideToggle('fast');
 
     });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>100){
+            $('#strelicaGore').fadeIn(function(){
+                $(this).css('display','block');
+            })
+        }else{
+            $('#strelicaGore').fadeOut(function(){
+                $(this).css('display','none');
+            })
+        }
+
+    });
 })
 //SLAJDER
 var slikaSlajder=document.getElementById('slikaSlajder')
