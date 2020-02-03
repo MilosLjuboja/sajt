@@ -33,7 +33,7 @@ $(document).ready(function(){
 })
 //SLAJDER
 var slikaSlajder=document.getElementById('slikaSlajder')
-var slike=["img/slika4nova.png","img/slika5.jpg","img/slika6.jpg"]
+var slike=["img/slika4nova.png","img/slika5.jpg","img/slika7nova.jpg"]
 var index=0;
 function slajder(){
    slikaSlajder.src=slike[index]
