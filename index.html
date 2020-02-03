@@ -121,14 +121,50 @@
                     <p class="pb-4">pera@ict.edu.rs</p>
                 </div>
                 <div class="col-lg-6">
-                    
+                    <h2>Pišite nam</h2>
+                    <form action="#" mehtod="GET" name="forma" id="forma">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Ime</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ime" id="ime" class="text"/>
+                                    <p class="greskaIspis">Pogresan unos imena!</p>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                        <label>Prezime</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="prezime" id="prezime" class="text"/>
+                                        <p class="greskaIspis">Pogresan unos prezimena!</p>
+                                    </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                        <label>E-mail</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="mejl" id="mejl" class="text"/>
+                                        <p class="greskaIspis">Pogresan unos mejla!</p>
+                                    </td>
+                            </tr>
+                            <tr>
+                                    <td colspan="2">
+                                        <input type="button" name="posalji" id="posalji" value="Pošalji" />
+                                    </td>
+                            </tr>
+                        </table>
+                   </form>
                 </div>
             </div>
         </div>
-
     </div>
     <footer>
-        <div class="container">
+        <div class="container" id="autor">
             <div class="row py-5">
                 <div class="col-lg-5 ">
                     <img src="img/autor1.jpg" alt="autor" class="slikaAutor pb-3"/>

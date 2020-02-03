@@ -2,7 +2,7 @@
 window.onload=function(){
     //DINAMICKA NAVIGACIJA
     var nizMeni=["Početna","Projekti","O nama","Kontakt","Autor"];
-    var linkoviMeni=["#","#projekti","#","#","#","#"];
+    var linkoviMeni=["#","#projekti","#onama","#kontakt","#autor"];
     var meni="";
     meni+="<ul id='lista'>"
     for(var i=0;i<nizMeni.length;i++){
@@ -12,7 +12,7 @@ window.onload=function(){
     document.getElementById("nav").innerHTML=meni;
     //
     var nizMeni=["Početna","Projekti","O nama","Kontakt","Autor"];
-    var linkoviMeni=["#","#projekti","#","#","#"];
+    var linkoviMeni=["#","#projekti","#onama","#kontakt","#autor"];
     var meni="";
     meni+="<ul id='listaHamburger' class='nevidljiv'>"
     for(var i=0;i<nizMeni.length;i++){
