@@ -53,7 +53,7 @@ divProjekti.innerHTML+=tekst
 //SLAJDER KRAJ
 //SLIKE PROJEKATA
 var projektiSlike=document.getElementById("projektiSlike")
-var nizSlika=["img/slikaProjekti5.jpg","img/slikaProjekti2.jpg","img/slikaProjekti3.jpg"]
+var nizSlika=["img/slikaProjekti4.jpg","img/slikaProjekti2.jpg","img/slikaProjekti6.jpg"]
 var nizNaslova=["Los Angeles","Miami","Los Angeles"]
 var blokovi=""
 for(var i=0;i<=nizSlika.length-1;i++){
