@@ -23,14 +23,20 @@ window.onload=function(){
     //KRAJ NAVIGACIJE
     //SLAJDER, POCINJE OD 34 LINIJE A ZAVRSAVA SE U 49
     slajder()
+    //POZIVANJE PROVERE FORME
+    for(var i=0;i<greska.length;i++){
+        greska[i].style.display="none";
+        }
+    var dugme=document.getElementById("posalji");
+    dugme.addEventListener("click",provera);
 }
+//PROMENLJIVA ZA ISPIS GRESKE U FORMI
+var greska=document.getElementsByClassName("greskaIspis");
 
 $(document).ready(function(){
     $('#hamburger').click(function(){
         $('#hamburgerPodMeni').find('ul').stop(true,true).slideToggle('fast');
-
     });
-
     $(window).scroll(function(){
         if($(this).scrollTop()>100){
             $('#strelicaGore').fadeIn(function(){
@@ -52,16 +58,14 @@ function slajder(){
    slikaSlajder.src=slike[index]
     if(index<slike.length-1){
         index++ 
-        
     }
     else{
         index=0
-        
     }
-    setTimeout("slajder()",2000)
+    setTimeout("slajder()",2000)    
 }
-
 //SLAJDER KRAJ
+
 //SLIKE PROJEKATA
 var projektiSlike=document.getElementById("projektiSlike")
 var nizSlika=["img/slikaProjekti4.jpg","img/slikaProjekti2.jpg","img/slikaProjekti6.jpg"]
@@ -96,6 +100,52 @@ var mapa=document.getElementById('mapa')
 var tagMape=`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.340448317075!2d20.481691315750936!3d44.81462848457049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0x4b2dd3d867d041a!2z0JfQtNGA0LDQstC60LAg0KfQtdC70LDRgNCwIDE2LCDQkdC10L7Qs9GA0LDQtA!5e0!3m2!1ssr!2srs!4v1580677048542!5m2!1ssr!2srs" frameborder="0" style="border:0;" allowfullscreen=""></iframe>`
 mapa.innerHTML=tagMape
 
-
+//PROVERA FORME
+function provera(){
+    var a=proveraImena();
+    var b=proveraPrezimena();
+    var c=proveraMejla();
+    if(a && b && c )alert("Uspešno ste popunili formu :D");
+}
+//PROVERA IMENA
+function proveraImena(){
+    var ime=document.getElementById("ime");
+    var imeVrednost=ime.value;
+    var regIme=/^[A-Z][a-z]{1,19}$/
+    if(regIme.test(imeVrednost)){
+         greska[0].style.display="none";
+         return true;
+    }
+    else{
+        greska[0].style.display="block";
+    }
+}
+//PROVERA PREZIMENA
+function proveraPrezimena(){
+    var prezime=document.getElementById("prezime");
+    var prezimeVrednost=prezime.value;
+    var regPrezime=/^([A-Z][a-z]{1,19})(\s[A-Z][a-z]{1,29})*$/
+    if(regPrezime.test(prezimeVrednost)){
+        greska[1].style.display="none";
+        return true;
+    }
+    else{
+        greska[1].style.display="block";
+    }
+}
+//PROVERA MEJLA
+function proveraMejla(){
+    var mejl=document.getElementById("mejl");
+    var mejlVrednost=mejl.value;
+    var regMejl=/^[\w\d\$\!\-]+@[\w]{2,4}\.[\w]{2,4}$/
+    if(regMejl.test(mejlVrednost)){
+        greska[2].style.display="none";
+        return true;
+    }
+    else{
+        greska[2].style.display="block";
+    }
+}
+//PROVERA PORUKE
 
  

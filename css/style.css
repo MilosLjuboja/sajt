@@ -32,7 +32,6 @@ p,a,h4,form,input,#poruka{
 a{
     text-decoration: none;
     color: #fff;
-
 }
 #navigacija{
     width:100%;
@@ -177,13 +176,19 @@ a{
     margin-top: 50px;
     font-size: 19px;
 }
-#forma input{
-    width: 100%;
+#forma input,button{
+    width: 90%;
     margin-top: 20px;
     font-size: 19px;
 }
+
 #poruka{
     resize: none;
+    width: 90%;
+    height: 60px;
+}
+.greskaIspis{
+    color: rgb(255, 0, 0);
 }
 .slikaAutor{
     width: 300px;
@@ -234,6 +239,9 @@ footer{
     }
     #formaKontakt,#kontaktBlok{
         padding-left: 10%;
+    }
+    .slikaAutor{
+        width: 250px;
     }
 }
 
