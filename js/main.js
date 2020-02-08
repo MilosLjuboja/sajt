@@ -70,7 +70,7 @@ $(document).ready(function(){
 })
 //SLAJDER
 var slikaSlajder=document.getElementById('slikaSlajder')
-var slike=["img/slika4nova.png","img/slika5.jpg","img/slika7nova.png"]
+var slike=["img/slika4nova.png","img/slika5nova.png","img/slika7.png"]
 var index=0;
 function slajder(){
    slikaSlajder.src=slike[index]
