@@ -189,9 +189,11 @@ a{
 }
 .greskaIspis{
     color: rgb(255, 0, 0);
+    font-size: 11px;
 }
 .slikaAutor{
     width: 300px;
+    
 }
 footer{
     background-color: rgba(0, 0, 0, 0.9);
@@ -210,12 +212,19 @@ footer{
 }
 @media screen and (max-width:900px){
     .okvirSlike{
-        width: 90%;
+        width: 100%;
     }
 }
 @media screen and (max-width:600px){
+    
     h1{
-        font-size: 1em;
+        font-size: 1.1em;
+    }
+    #projekti h2,#onama h2,#tekstAutor h2{
+        font-size: 1.5em;
+    }
+    #projekti p,#onama p,#tekstAutor p{
+        font-size: 0.9em;
     }
     #logo{
         padding-left: 0px;
@@ -225,8 +234,7 @@ footer{
     }
     #sredina 
     #pokazivac{
-        top: 100px;
-        
+        display: none;
     }
     #pokazivac a i{
         color:#d6a400;
@@ -237,11 +245,43 @@ footer{
     .projekti img{
         width: 180%;
     }
+    .projekti{
+        text-align: left;
+    }
+    .projekti h2{
+        margin-left: 15px;
+    }
+    #forma,input{
+        font-size: 14px;
+    }
+    #forma input{
+        margin-top: 5px;
+        margin-bottom: 12px;
+    }
+    #posalji{
+        margin-left: 3%;
+    }
     #formaKontakt,#kontaktBlok{
         padding-left: 10%;
     }
     .slikaAutor{
         width: 250px;
+        margin: 10px;
+    }
+    #tekstAutor,h4{
+        margin: 10px;
+    }
+    #projektiCelina{
+        margin-top:0px;
+    }
+    .slajderDiv{
+        padding-top: 0px;
+    }
+    #onama{
+        margin: 40px 0px;
+    }
+    #kontaktInfo{
+        padding-bottom: 10px;
     }
 }
 
