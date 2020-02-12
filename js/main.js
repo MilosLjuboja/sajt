@@ -47,6 +47,10 @@ window.onload=function(){
             <p class="pb-4">${nizP[item]}</p>`
     }
     kontaktBlok.innerHTML+=div
+    //FUNKCIJA O NAMA
+    oNama()
+    //FUNKCIJA PROJEKTI
+    projekti()
 }
 //PROMENLJIVA ZA ISPIS GRESKE U FORMI
 var greska=document.getElementsByClassName("greskaIspis");
@@ -80,7 +84,7 @@ function slajder(){
     else{
         index=0
     }
-    setTimeout("slajder()",2000)    
+    setTimeout(slajder,3000)    
 }
 //SLAJDER KRAJ
 
@@ -141,6 +145,52 @@ function proveraMejla(){
         greska[2].style.display="block";
     }
 }
-//PROVERA PORUKE
+//DINAMICKO UBACIVANJE SADRZAJA PROJEKTI
+function projekti(){
+    var divProjekti=document.getElementById('projekti')
+    var h2=document.createElement('h2')
+    var h2Sadrzaj=document.createTextNode('Projekti')
+    h2.appendChild(h2Sadrzaj)
+    divProjekti.append(h2)
+    var niz=[`KPS je kao kompanija učestvovala u izgradnji brojnih konstrukcija širom sveta. Realizovali smo preko 70 projekata u 50 gradova na tri kontinenta - Evropi, Severnoj Americi i Australiji.`,`Najbitniji i najpoznatiji građevinski poduhvati naše kompanije su oni u Amsterdamu, Majamiju i Melburnu iako nijedan naš  projekat u bilo kom drugom gradu nije ništa manje kvalitetan i pouzdan.`,`Pored konstrukcija naša kompanija se bavi i reparacijama starih građevinskih objekata kao što je most Golden Gejt u San Francisku za čiju restauraciju su zaslužni naši radnici.`]
+    niz.forEach(item => {
+        var p=document.createElement('p')
+        var pSadrzaj=document.createTextNode(item)
+        p.appendChild(pSadrzaj)
+        divProjekti.append(p)
+    });
+}
+//DINAMICKO UBACIVANJE SADRZAJA O NAMA
+function oNama(){
+    //SLIKA
+    var onamaSlika=document.getElementById('onamaSlika')
+    var img=document.createElement('img')
+    img.setAttribute('src','img/slikaOnama.jpg')
+    img.setAttribute('alt','O nama')
+    onamaSlika.append(img)
+    //TEKST
+    var onamaTekst=document.getElementById('onamaTekst')
+    var niz=[`Porodica Katić je 1934. godine emigrirala u SAD.  `,`KPS (Kvalitet pouzdanost stabilnost) je osnovana 1952. godine za vreme ekonomskog buma u SAD. Prvobitno je uzimala projekte isključivo u Njujorku, a kako je rasla potražnja za građevisnkim kompanijama KPS je počela da radi u više gradova, a na kraju i na više kontinenata.`,`Danas, skoro 70 godina kasnije KPS je jedna od vodećih građevinskih kompanija u svetu.`]
+    var h2=document.createElement('h2');
+    var sadrzajH2=document.createTextNode('O nama')
+    h2.appendChild(sadrzajH2)
+    onamaTekst.append(h2)
+    
+  
+    var iTag=document.createElement('i')
+    var iTagSadrzaj=document.createTextNode('"Stigao sam sa ženom i dvoje dece u njujoršku luku, u džepu sam imao nešto ušteđevine i mnogo nade"')
+    iTag.appendChild(iTagSadrzaj)
+    niz.forEach((item,i) => {
+        var p=document.createElement('p')
+        var pSadrzaj=document.createTextNode(item)
+        p.appendChild(pSadrzaj)
+        if(i==0){
+            p.appendChild(iTag)
+            var pSadrzaj2=document.createTextNode(` - priseća se Vukašin Katić. Dvadeset godina života u Sjedinjenim Američkim Državama i ubrzan ekonomski rast nakon Drugog Svetskog rata su dovoljno ohrabrili Vukašina da odluči da osnuje građevinsku firmu.`)
+            p.appendChild(pSadrzaj2)
+        }
+        onamaTekst.append(p)
+    });
+}
 
  
