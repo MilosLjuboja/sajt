@@ -21,7 +21,7 @@ window.onload=function(){
     meni+="</ul>"
     document.getElementById("hamburgerPodMeni").innerHTML+=meni;
     //KRAJ NAVIGACIJE
-    //SLAJDER, POCINJE OD 34 LINIJE A ZAVRSAVA SE U 49
+    //POZIVANJE FUNKCIJE SLAJDER
     slajder()
     //POZIVANJE PROVERE FORME
     for(var i=0;i<greska.length;i++){
@@ -71,6 +71,17 @@ $(document).ready(function(){
         }
 
     });
+    $("input").focus(function(){
+        $(this).css("background-color", "#f5e162");
+      });
+    $("input").blur(function(){
+        $(this).css("background-color", "#fff");
+    });
+    $("a .mreze").hover(function(){
+        $(this).css("color", "#3260a8");
+        }, function(){
+        $(this).css("color", "#fff");
+      });
 })
 //SLAJDER
 var slikaSlajder=document.getElementById('slikaSlajder')

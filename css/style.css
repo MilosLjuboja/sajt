@@ -181,7 +181,14 @@ a{
     margin-top: 20px;
     font-size: 19px;
 }
-
+#forma input,#forma #poruka{
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+#forma #posalji{
+    width: 374px;
+}
 #poruka{
     resize: none;
     width: 90%;
@@ -193,7 +200,6 @@ a{
 }
 .slikaAutor{
     width: 300px;
-    
 }
 footer{
     background-color: rgba(0, 0, 0, 0.9);
@@ -209,6 +215,11 @@ footer{
     right:50px;
     color: #d6a400;
     display:none;
+}
+.mreze{
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 50px;  
 }
 @media screen and (max-width:900px){
     .okvirSlike{
@@ -254,9 +265,11 @@ footer{
     #forma,input{
         font-size: 14px;
     }
-    #forma input{
+    #forma input,#forma #poruka,#forma #posalji{
         margin-top: 5px;
         margin-bottom: 12px;
+        width: 90%;
+        border-radius: 5px;
     }
     #posalji{
         margin-left: 3%;
@@ -282,6 +295,17 @@ footer{
     }
     #kontaktInfo{
         padding-bottom: 10px;
+    }
+    .mreze{
+        font-size: 30px;
+        margin: 5px;
+        margin-top: 10px;
+    }
+    #strelicaGore{
+        font-size: 35px;
+        bottom: 30px;
+        right:20px;
+        
     }
 }
 
